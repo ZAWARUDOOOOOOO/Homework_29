@@ -41,6 +41,7 @@ public class BookController {
                 .stream()
                 .map(mapper::mapToView)
                 .collect(Collectors.toList());
+//        return bookService.getBooks().stream().map(mapper::mapToView).collect(Collectors.toList());
     }
 
     @GetMapping("/bookId")
